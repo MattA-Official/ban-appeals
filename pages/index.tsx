@@ -67,7 +67,7 @@ const Home: NextPage = () => {
           <h1>Signed in as {session.user?.name}</h1>
           <button onClick={() => signOut()}>Sign out</button>
         </div>
-        <p>You aren\'t banned!</p>
+        <p>You aren&apost banned!</p>
       </main>
     );
   }
