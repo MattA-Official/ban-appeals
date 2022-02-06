@@ -3,8 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { getSession } from "next-auth/react";
 import getBan from "../../lib/get-ban";
 
-const WEBHOOK =
-  "https://ptb.discord.com/api/webhooks/939513540375642152/0sCgQsmwW8pTHK3Xtn3xgDEJsfWgZ7lY0zSKrOcktgBkZzZRxNzHcecJlDd4GoRm2IUy";
+const WEBHOOK = process.env.WEBHOOK || "";
 
 export default async function handler(
   req: NextApiRequest,
